@@ -40,7 +40,7 @@
         <h1>Welcome to Eventify</h1>
         <p>Click Enter to view your Events</p>
         <div class="options">
-            <a href="dynamic_full_calender.php">Enter</a>
+            <a href="dynamic_full_calendar.php">Enter</a>
         </div>
     </div>
 </body>
