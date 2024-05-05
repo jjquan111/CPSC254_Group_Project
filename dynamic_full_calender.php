@@ -7,5 +7,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js"></script>
 </head>
 <body>
+    <div id="calendar"></div>
+
+    <script>
+    $(document).ready(function() {
+        $('#calendar').fullCalendar({
+            events: 'display_event.php'
+        });
+    });
+    </script>
 </body>
 </html>
