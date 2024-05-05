@@ -1,0 +1,10 @@
+<?php
+session_start();
+require 'database_connection.php';
+
+// Checking if the request is a POST and all necessary fields are present
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_SESSION['user_id'], $_POST['title'], $_POST['start'], $_POST['end'])) {
+    $title = $_POST['title'];
+    $start = date('Y-m-d H:i:s', strtotime($_POST['start'])); // Format the start date
+    $end = date('Y-m-d H:i:s', strtotime($_POST['end'])); // Format the end date
+?>
