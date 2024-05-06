@@ -1,7 +1,7 @@
 # CPSC254_Group_Project
-## FullCalendar with User Authentication
+## Eventify: An Events Calendar
 
-This project integrates FullCalendar with a PHP and MySQL database, allowing user to manag events in a calendar interface. It supports ability to add, view and delete events.
+This project integrates FullCalendar, an open source Javascript library, with PHP and MySQL database. It allows user to to add, view and delete events through a user-friendly interface.
 
 ### Features
 
