@@ -4,7 +4,7 @@ require 'database_connection.php';
 // Set the header to JSON since we are returning JSON data
 header('Content-Type: application/json');
 
-//SQL statement to fetch events
+// Prepare the SQL statement to fetch events
 $query = "SELECT id, title, start_event as start, end_event as end FROM events";
 $stmt = $pdo->prepare($query);
 $stmt->execute();
