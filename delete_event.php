@@ -5,17 +5,17 @@ require 'database_connection.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['event_id'])) {
     $event_id = $_POST['event_id'];
 
-    // The SQL statement to delete the event
+    // The SQL statement set to delete the event
     try {
         $stmt = $pdo->prepare("DELETE FROM events WHERE id = ?");
-        // Executes the prepared statement with the provided event_id
+        // Executes the prepared statement with the given event_id
         if ($stmt->execute([$event_id])) {
             echo json_encode(['status' => 'success']);
         } else {
             echo json_encode(['status' => 'error', 'message' => 'Failed to delete event']);
         }
 
-        // Catches and returns any database errors encountfound in the proccess
+        // Catches and returns any database errors found in the proccess
     } catch (PDOException $e) {
         echo json_encode(['status' => 'error', 'message' => 'Database error: ' . $e->getMessage()]);
     }
