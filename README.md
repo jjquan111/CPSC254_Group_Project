@@ -14,5 +14,5 @@ This project integrates FullCalendar, an open source Javascript library, with PH
 Before you begin, ensure you have met the following requirements:
 - PHP 7.x or higher
 - MySQL 5.7 or higher
-- Apache or Nginx Web Server
-- Composer (for managing PHP dependencies)
+- Apache 
+
