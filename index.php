@@ -14,11 +14,10 @@
             height: 100vh;
         }
         .container {
-            width: 50%;
+            width: 40%;
             padding: 20px;
             background-color: #ffffff;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
         .options a {
@@ -40,7 +39,7 @@
         <h1>Welcome to Eventify</h1>
         <p>Click Enter to view your Events</p>
         <div class="options">
-            <a href="dynamic_full_calendar.php">Enter</a>
+            <a href="dynamic_full_calender.php">Enter</a>
         </div>
     </div>
 </body>
